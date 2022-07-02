@@ -199,7 +199,7 @@ hr {
 .works .works-content {
   display: flex;
   flex-direction: row;
-  margin-bottom: 10px 10px;
+  margin: 10px 10px;
   width: 100%;
   padding: 15px 15px 0 15px;
 }
@@ -235,6 +235,7 @@ hr {
   font-size: 32px;
   font-weight: 600;
 }
+
 .works-content .works-content-body p {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -244,13 +245,14 @@ hr {
   text-align: left;
   color: #c8c8d4;
 }
+
 .works-content .works-content-body ul li {
   margin: 0 7px;
   padding: 7px;
 }
 
 .works-content .works-content-body ul li a {
-  padding: 5px;  
+  padding: 5px;
   text-decoration: none;
   color: #f5f5ff;
   width: 71px;
