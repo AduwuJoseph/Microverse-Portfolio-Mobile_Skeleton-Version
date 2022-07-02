@@ -87,13 +87,6 @@ section {
   margin-bottom: 5px;
 }
 
-.headline hr {
-  border: 0;
-  height: 1px;
-  background-color: #555;
-  margin: 10px 0;
-}
-
 .intro-text {
   display: flex;
   justify-content: center;
@@ -101,14 +94,6 @@ section {
   flex-direction: row;
   width: 365px;
   padding: 10px;
-}
-
-.intro-text hr {
-  border: 0;
-  height: 1px;
-  background-color: #555;
-  margin: 10px 0;
-  z-index: -5;
 }
 
 .intro-text p {
@@ -148,8 +133,6 @@ section {
 .service-list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5px;
-  /* width: 50%; */
   margin: 10 10px;
   padding: 15px;
   justify-content: left;
