@@ -22,7 +22,7 @@ header {
   width: 100%;
 }
 
-section {
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,15 +34,11 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 24px;
+  padding: 50px 24px;
   gap: 5px;
   background-image: url(images/top-circles.png);
   background-repeat: no-repeat;
-  position: absolute;
   width: 375px;
-  padding-left: 24px;
-  padding-right: 24px;
-  top: 19px;
 }
 
 .toolbar {
@@ -175,4 +171,114 @@ hr {
   list-style: none;
   gap: 1rem;
   margin: 20px 10px;
+}
+
+.works-header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #7d73fc;
+  margin: 0 10px 0 10px;
+  padding: 15px 15px 0 15px;
+  width: 375px;
+}
+
+.works {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 375px;
+  margin: 10px 10px;
+  padding: 15px;
+  background-image: url(images/top-circles.png);
+  background-repeat: no-repeat;
+}
+
+.works .works-content {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px 10px;
+  width: 100%;
+  padding: 15px 15px 0 15px;
+}
+
+.works-content .works-content-body {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 5px 5px;
+}
+
+.works-content .works-content-body .works-logo {
+  width: 100%;
+  padding: 5px 0 5px 0;
+  align-content: center;
+}
+
+.works-content .works-content-body .works-logo img {
+  width: 100%;
+  height: 200px;
+  padding: 5px;
+  align-content: center;
+}
+
+.works-content .works-content-body ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.works-content .works-content-body .supporting-text {
+  font-size: 32px;
+  font-weight: 600;
+}
+.works-content .works-content-body p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+  color: #c8c8d4;
+}
+.works-content .works-content-body ul li {
+  margin: 0 7px;
+  padding: 7px;
+}
+
+.works-content .works-content-body ul li a {
+  padding: 5px;  
+  text-decoration: none;
+  color: #f5f5ff;
+  width: 71px;
+  height: 20px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.works-content .works-content-body ul .border-right {
+  border-right: 1px solid #d1cfff;
+}
+
+button {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  align-content: center;
+  letter-spacing: 0.03em;
+  color: #edecff;
+  border: none;
+  padding: 10px 5px;
+  margin: 7px 0 7px 0;
+  background-color: #9490ff;
 }
