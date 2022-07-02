@@ -173,7 +173,7 @@ hr {
   margin: 20px 10px;
 }
 
-.works-header {
+section {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -182,13 +182,15 @@ hr {
   margin: 0 10px 0 10px;
   padding: 15px 15px 0 15px;
   width: 375px;
+  font-size: 26px;
+  font-weight: 600;
 }
 
 .works {
-  display: flex;
+  display: grid;
   justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  grid-template-columns: 100%;
+  grid-template-rows: 33.33% 33.33% 33.33%;
   width: 375px;
   margin: 10px 10px;
   padding: 15px;
