@@ -339,3 +339,19 @@ textarea {
 .justify-center {
   justify-content: center;
 }
+
+button:hover,
+button:focus {
+    background: linear-gradient(to right, #5f5adb 0%, rgb(136, 99, 196) 100%) border-box;
+    border: 3px solid transparent;
+    color: #fff;
+    transition: all .5s ease;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+button:active {
+  background: linear-gradient(to right, #5f5adb 0%, rgb(136, 99, 196) 100%) border-box;
+}
