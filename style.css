@@ -170,7 +170,7 @@ hr {
   flex-direction: row;
   list-style: none;
   gap: 1rem;
-  margin: 20px 10px;
+  margin: 10px 10px;
 }
 
 .works-header {
@@ -285,4 +285,58 @@ button {
   padding: 10px 5px;
   margin: 7px 0 7px 0;
   background-color: #9490ff;
+}
+
+.contact-form-section {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  width: 375px;
+  margin: 10px 10px;
+  padding: 15px;
+  background-image: url(images/top-circles.png);
+  background-repeat: no-repeat;
+}
+
+.contact-form-section .title p {
+  color: #f5f5ff;
+}
+
+.contact-form-section .contact-form {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 10px;
+  width: 100%;
+  padding: 15px 15px 0 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+input,
+textarea {
+  margin: 5px 0 5px 0;
+  width: 320px;
+  padding: 7px 7px 7px 4px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  z-index: -3;
+}
+
+.social-media .contact-email {
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+  justify-content: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
