@@ -7,6 +7,10 @@
     set up a new repository and prepare it for development using best practices (e.g. linters).
     build the first 2 sections of the mobile website using the template you chose in the previous step.
 
+# Portfolio: Built the desktop Version 
+
+> In continuation of the mobile version skeleton, we converted it to the desktop version using media queries
+
 
 
 ## Built With
