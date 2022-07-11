@@ -18,9 +18,9 @@
 - Html and CSS
 - Visual studio code (IDE)
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Checkit out here - Live demo link](https://aduwujoseph.github.io/)
 
 
 ## Getting Started
