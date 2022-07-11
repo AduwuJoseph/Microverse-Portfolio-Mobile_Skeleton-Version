@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://aduwujoseph.github.io/)
+[Checkit out here - Live demo link](https://aduwujoseph.github.io/)
 
 
 ## Getting Started
