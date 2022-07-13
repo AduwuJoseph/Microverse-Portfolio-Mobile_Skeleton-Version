@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aduwu-Joseph-Portfolio</title>
+    <title>Aduwu Joseph Portfolio</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
@@ -13,15 +13,15 @@
     <header class="header-container">
       <div class="toolbar">
         <div class="logo">
-          <a>Aduwu Joseph</a>
+          <a href="index.html">Aduwu Joseph</a>
         </div>
         <nav>
           <div class="menu">
             <ul>
-              <li> <a href=""> Portfolio </a></li>
-              <li> <a href=""> About </a></li>
-              <li> <a href="" >Contact </a></li>
-              <li><a href="#"><i class="fa fa-envelope"></i></li>
+              <li> <a href="#portfolio"> Portfolio </a></li>
+              <li> <a href="#about"> About </a></li>
+              <li> <a href="#contact" >Contact </a></li>
+              <li><a href="#contact"><i class="fa fa-envelope"></i></li>
             </ul>
             <a class="nav-button" href="#"><i class="fa fa-bars"></i></a>
           </div>
@@ -30,7 +30,7 @@
     </header>
     
     <!--    section     -->
-    <section class="section-container">
+    <section class="section-container" id="about">
         <div class="headline">
           <div class="primary-text">
             <h1>Aduwu Joseph</h1>
@@ -91,36 +91,36 @@
         </div>  
         <div class="support-item ">
             <div class="workArrow left">
-              <a href=""><img src="images/Element-Let.png" alt="" /></a>
+              <a href="#"><img src="images/Element-Let.png" alt="Navigate Left" /></a>
             </div>
             <div class="social-media">
               <ul >
                 <li>
-                  <a href=""><img class="git-icon" src="images/git-icon.png" alt=" "></a>
+                  <a href="#"><img class="git-icon" src="images/git-icon.png" alt="Github"></a>
                 </li>
                 <li>
-                  <a href=""><img class="linkedin-icon" src="images/Linkedin-icon.png" alt=""></a>
+                  <a href="#"><img class="linkedin-icon" src="images/Linkedin-icon.png" alt="Linkedin"></a>
                 </li>
                 <li>
-                  <a href=""><img class="angelist-icon" src="images/Icon-Angelist.png" alt=""></a>
+                  <a href="#"><img class="angelist-icon" src="images/Icon-Angelist.png" alt="Angelist"></a>
                 </li>
                 <li>
-                  <a href=""><img class="Twitter-icon" src="images/Icon-Twitter.png" alt=""></a>
+                  <a href="#"><img class="Twitter-icon" src="images/Icon-Twitter.png" alt="Twitter"></a>
                 </li>
                 <li>
-                  <a href=""><img class="Medium-icon" src="images/Medium-icon.png" alt=""></a>
+                  <a href="#"><img class="Medium-icon" src="images/Medium-icon.png" alt="Medium"></a>
                 </li>
               </ul>
             </div>
             <div class="right">
-              <a href=""><img src="images/Element-Right.png" alt="" /></a>
+              <a href="#"><img src="images/Element-Right.png" alt="Navigate Right" /></a>
               
             </div>
         </div>
         
     </section>
     <!----  Work section   ---- -->
-    <section class="work-container">
+    <section class="work-container"  id="portfolio">
       <div class="work-tittle">
           <h2>MY RECENT </h2>
 
@@ -129,7 +129,7 @@
       <hr>
       <div class="projects">
           <div class="projects-seection right-img">
-              <a  class = "" href=""><img src="images/img-placeholder.png" alt=""></a>
+              <a href="#"><img src="images/img-placeholder.png" alt="Project 1"></a>
             
             <div class="project-text">
               <h2 class="post-tittle">Multi-Post Stories</h2>
@@ -151,7 +151,7 @@
           </div>
           </div>
           <div class="projects-seection left-img">
-            <a  class = "" href=""><img src="images/img-placeholder.png" alt=""></a>
+            <a  class = "" href="#"><img src="images/img-placeholder.png" alt="Project 2"></a>
             <div class="project-text">
               <h2 class="post-tittle">Multi-Post Stories</h2>
               <div class="support-text">
@@ -172,7 +172,7 @@
             </div>
           </div>
           <div class="projects-seection right-img">
-            <a  class = "" href=""><img src="images/img-placeholder.png" alt=""></a>
+            <a  class = "" href="#"><img src="images/img-placeholder.png" alt="Project 3"></a>
             <div class="project-text">
               <h2 class="post-tittle">Multi-Post Stories</h2>
               <div class="support-text">
@@ -193,7 +193,7 @@
             </div>
           </div>
           <div class="projects-seection left-img">
-            <a class = "" href=""><img src="images/img-placeholder.png" alt=""></a>
+            <a class = "" href="#"><img src="images/img-placeholder.png" alt="Project 4"></a>
             <div class="project-text">
               <h2 class="post-tittle">Multi-Post Stories</h2>
               <div class="support-text">
@@ -209,14 +209,14 @@
                   <li>Ruby </li>
                 </ul>
               </div>
-              <button class= "bttn" type="button">See Project</button>
+              <button class="bttn" type="button">See Project</button>
             </div>
           </div>
           </div>
       </div>  
     </section>
 
-    <section class="contact-container">
+    <section class="contact-container" id="contact">
       <div class="frame42">
         <h2 class="contact-tittle2"> Let’s chat!</h2>
         <h2 class="contact-tittle1">CONTACT US</h2>
@@ -228,9 +228,12 @@
         </p>
       </div>
       <form method="post" action="https://formspree.io/f/mjvlplnjl">
+        <label>Name</label>
         <input class ="name" type="text" name="text" required maxlength="30" placeholder="Text Input">
+        <label>Email</label>
         <input type="email" name="email" required id="email"
         placeholder="test@gmail.com">
+        <label>Message</label>
         <textarea name="text" required maxlength="500" id="text">Enter text here</textarea>
         <button class="bttn" type="button">See Project</button>
       </form>
@@ -242,19 +245,19 @@
         <div class="social-media-icon">
           <ul>
             <li>
-              <a href=""><img class="git-icon" src="images/git-icon.png" alt=" "></a>
+              <a href="#"><img class="git-icon" src="images/git-icon.png" alt="Github"></a>
             </li>
             <li>
-              <a href=""><img class="linkedin-icon" src="images/Linkedin-icon.png" alt=""></a>
+              <a href="#"><img class="linkedin-icon" src="images/Linkedin-icon.png" alt="Linkedin"></a>
             </li>
             <li>
-              <a href=""><img class="angelist-icon" src="images/Icon-Angelist.png" alt=""></a>
+              <a href="#"><img class="angelist-icon" src="images/Icon-Angelist.png" alt="Angelist"></a>
             </li>
             <li>
-              <a href=""><img class="Twitter-icon" src="images/Icon-Twitter.png" alt=""></a>
+              <a href="#"><img class="Twitter-icon" src="images/Icon-Twitter.png" alt="Twitter"></a>
             </li>
             <li>
-              <a href=""><img class="Medium-icon" src="images/Medium-icon.png" alt=""></a>
+              <a href="#"><img class="Medium-icon" src="images/Medium-icon.png" alt="Medium"></a>
             </li>
           </ul>
         </div>
