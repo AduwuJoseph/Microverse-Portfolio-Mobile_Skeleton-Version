@@ -336,6 +336,17 @@ hr {
   margin-bottom: 76px;
 }
 
+label {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ebebff;
+  padding-bottom: 7px;
+  align-self: baseline;
+  margin-left: 32px;
+}
+
 /* Desktop version */
 
 @media screen and (min-width: 768px) {
