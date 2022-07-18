@@ -36,10 +36,23 @@ body {
 
 .toolbar .logo a {
   text-decoration: none;
+  color: #fff;
 }
 
 .menu ul {
   display: none;
+  overflow: hidden;
+  position: relative;
+  list-style: none;
+}
+
+
+.menu ul li a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
 i {
@@ -350,6 +363,9 @@ label {
 /* Desktop version */
 
 @media screen and (min-width: 768px) {
+  .headline {
+    max-width: 500px;
+  }
   .menu ul {
     list-style: none;
     display: flex;
