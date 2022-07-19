@@ -44,17 +44,20 @@ body {
   overflow: hidden;
   position: relative;
   list-style: none;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;  
 }
 
 .menu ul li a {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 24px;
   display: block;
 }
 
-i {
+.toolbar a {
   color: #edecff;
 }
 
@@ -174,7 +177,7 @@ hr {
 }
 
 .text-danger {
-  color: #ff0000;
+  color: #ff0000 !important;
 }
 
 .work-container {
