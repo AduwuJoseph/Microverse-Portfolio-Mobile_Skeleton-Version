@@ -34,11 +34,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.toolbar .logo a {
-  text-decoration: none;
-  color: #fff;
-}
-
 .toolbar a {
   color: #edecff;
 }
@@ -50,7 +45,7 @@ body {
   list-style: none;
   align-items: center;
   text-align: center;
-  font-weight: 500;  
+  font-weight: 500;
 }
 
 .menu ul li a {
@@ -59,6 +54,11 @@ body {
   text-decoration: none;
   font-size: 24px;
   display: block;
+}
+
+.toolbar .logo a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .section-container {
@@ -186,8 +186,7 @@ hr {
   min-width: 280px;
   padding: 0 20px 0 20px;
   margin: 24px 0 12px 0;
-  background: url(images/portfolio\ background\ shapes\ mobile@2x.png) center
-    no-repeat;
+  background: url(images/portfolio\ background\ shapes\ mobile@2x.png) center no-repeat;
   top: 1175px;
   color: #dcdce8;
   font-family: "Inter", sans-serif;
@@ -373,7 +372,7 @@ label {
   .headline {
     max-width: 500px;
   }
-  
+
   .menu ul {
     list-style: none;
     display: flex;
