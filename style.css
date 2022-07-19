@@ -46,7 +46,6 @@ body {
   list-style: none;
 }
 
-
 .menu ul li a {
   color: white;
   padding: 14px 16px;
@@ -174,13 +173,18 @@ hr {
   display: none;
 }
 
+.text-danger {
+  color: #ff0000;
+}
+
 .work-container {
   display: grid;
   grid-template-columns: 100%;
   min-width: 280px;
   padding: 0 20px 0 20px;
   margin: 24px 0 12px 0;
-  background: url(images/portfolio\ background\ shapes\ mobile@2x.png) center no-repeat;
+  background: url(images/portfolio\ background\ shapes\ mobile@2x.png) center
+    no-repeat;
   top: 1175px;
   color: #dcdce8;
   font-family: "Inter", sans-serif;
