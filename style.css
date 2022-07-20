@@ -31,7 +31,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #fff;
-  font-family: "Roboto", sans-serif;  
+  font-family: "Roboto", sans-serif;
   padding-top: 30px;
 }
 
@@ -395,7 +395,8 @@ label {
 
 /* Desktop version */
 
-@media screen and (min-width: 768px) {  
+@media screen and (min-width: 768px) {
+  
   #desktop-only {
     display: block;
   }
