@@ -18,7 +18,7 @@ body {
   justify-content: space-between;
   padding-left: 55px;
   padding-right: 55px;
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 .frame38-container p {
@@ -31,11 +31,27 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;  
+  padding-top: 30px;
 }
 
 .toolbar a {
   color: #edecff;
+}
+
+.toolbar .nav-button {
+  padding-top: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: white;
+  padding: 0;
+  text-decoration: none;
+  font-size: 18px;
+  gap: 20px;
 }
 
 .menu ul {
@@ -44,15 +60,22 @@ body {
   position: relative;
   list-style: none;
   align-items: center;
-  text-align: center;
+  text-align: left;
   font-weight: 500;
 }
 
 .menu ul li a {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   color: white;
-  padding: 14px 16px;
+  padding: 14px 0;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 18px;
+  gap: 20px;
+}
+
+.menu-arrow {
   display: block;
 }
 
@@ -366,9 +389,17 @@ label {
   margin-left: 32px;
 }
 
+#desktop-only {
+  display: none;
+}
+
 /* Desktop version */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {  
+  #desktop-only {
+    display: block;
+  }
+
   .headline {
     max-width: 500px;
   }
@@ -379,6 +410,10 @@ label {
     justify-content: space-between;
     gap: 32px;
     color: #ebebff;
+  }
+
+  .menu-arrow {
+    display: none;
   }
 
   .logo {

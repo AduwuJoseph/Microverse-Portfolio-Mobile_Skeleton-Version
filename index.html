@@ -20,21 +20,19 @@
           <div class="logo">
             <a href="index.html">Aduwu Joseph</a>
           </div>
-
           <div class="menu">
             <ul id="myLinks">
-              <li><a href="#portfolio"> Portfolio </a></li>
-              <li><a href="#about"> About </a></li>
-              <li><a href="#contact">Contact </a></li>
+              <li><a href="#portfolio">Portfolio <i class="fa fa-chevron-right menu-arrow"></i></a></li>
+              <li><a href="#about"> About <i class="fa fa-chevron-right menu-arrow"></i></a></li>
+              <li><a href="#contact">Contact <i class="fa fa-chevron-right menu-arrow"></i></a></li>
               <li>
-                <a href="#contact"><i class="fa fa-envelope"></i></a>
+                <a href="#contact" id="desktop-only"><i class="fa fa-envelope"></i></a>
               </li>
             </ul>
           </div>
-
-          <a class="nav-button" id="nav-button" href="javascript:void(0);"
-            ><i class="fa fa-bars"></i
-          ></a>
+          <a class="nav-button" id="nav-button" href="javascript:void(0);">
+            <i class="fa fa-bars"></i>
+        </a>
         </div>
       </nav>
     </header>
@@ -185,7 +183,7 @@
                   <li>Ruby</li>
                 </ul>
               </div>
-              <button class="bttn" type="button">See Project</button>
+              <button class="bttn raise-modal" id="001" type="button">See Project</button>
             </div>
           </div>
         </div>
@@ -213,7 +211,7 @@
                   <li>Ruby</li>
                 </ul>
               </div>
-              <button class="bttn" type="button">See project</button>
+              <button class="bttn raise-modal" id="002" type="button">See project</button>
             </div>
           </div>
         </div>
@@ -241,7 +239,7 @@
                   <li>Ruby</li>
                 </ul>
               </div>
-              <button class="bttn" type="button">See project</button>
+              <button class="bttn raise-modal" id="003" type="button">See project</button>
             </div>
           </div>
         </div>
@@ -359,6 +357,40 @@ Enter text here</textarea
         <p class="footer-text">aduwujoseph4real@gmail.com</p>
       </div>
     </footer>
+      
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2></h2>
+        </div>
+        <div class="modal-body">
+        <img class="snap modal-image" src="images/Snapshoot-Portfolio.png" alt="#img">
+
+          <div class="support-text ">
+            <div class="project-details modal-text">
+              <p>
+              </p>
+            </div>
+            <div class="project-links modal-link">
+              <ul>
+                <li> css </li>
+                <li> html</li>
+                <li>bootstrap</li>
+                <li>Ruby </li>
+              </ul>
+            </div>
+            <div class="modal-buttons">
+              <button class="bttn modal-but" type="button">See source <img src="images/Icon-Export.png" alt=""></button>
+              <button class="bttn modal-but" type="button">See Source<img src="images/git-icon.png" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <script src="index.js"></script>
   </body>
 </html>
