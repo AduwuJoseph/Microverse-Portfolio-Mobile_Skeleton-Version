@@ -112,7 +112,7 @@ const email = document.getElementById('email');
 const error = document.getElementById('ErrorMessage');
 const submitbtn = document.getElementById('submitButton');
 // the function below check if the email address is all lowercase or not //
-let emailCheckLowerCase = (emailtxt) => {
+const emailCheckLowerCase = (emailtxt) => {
   let result = false;
   if (emailtxt !== emailtxt.toLowerCase()) {
     error.style.color = 'red';
@@ -154,14 +154,14 @@ inputFields.forEach((trigger) => {
   });
 });
 
-function storeToLocalStorage() {
+const storeToLocalStorage = () => {
   const data = {
     email: email.value,
     name: txtname.value,
     comment: comment.value,
   };
   localStorage.setItem('formdata', JSON.stringify(data));
-}
+};
 
 submitbtn.onclick = function () {
   if (emailCheckLowerCase(email.value) === true) {
@@ -170,7 +170,7 @@ submitbtn.onclick = function () {
   }
 };
 
-function getLocalStorageData() {
+const getLocalStorageData = () => {
   const data = JSON.parse(localStorage.getItem('formdata'));
   console.log(data);
   email.value = data.email;
