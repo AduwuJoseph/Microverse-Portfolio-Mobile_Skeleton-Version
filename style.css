@@ -249,6 +249,7 @@ a.menu-item {
   min-height: 12px;
   min-width: 12px;
 }
+
 .support-item {
   display: flex;
   flex-direction: column;
