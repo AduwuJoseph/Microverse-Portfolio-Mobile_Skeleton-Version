@@ -157,6 +157,11 @@ a.menu-item {
   color: #c8c8d4;
 }
 
+.intro-text {
+  padding: 8px;
+  line-height: 20px;
+}
+
 hr {
   color: #3a3837;
 }
@@ -187,6 +192,7 @@ hr {
   font-weight: 500;
   margin-left: 24px;
   line-height: 37px;
+  padding: 10px;
 }
 
 .left {
