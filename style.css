@@ -1,8 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
+:root {
+  --maxCont-width: 100%;
+  --mobile-medCont-width: calc((327 / 375) * 100vw);
+  --mobile-minCont-width: calc((312 / 375) * 100vw);
+}
+
 * {
+  margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-repeat: no-repeat;
 }
 
 body {
@@ -18,11 +28,16 @@ body {
   justify-content: space-between;
   padding-left: 55px;
   padding-right: 55px;
-  padding-top: 40px;
+  padding-top: 10px;
+}
+
+p {
+  line-height: 20px;
 }
 
 .frame38-container p {
   margin: 0 0 20px 0;
+  line-height: 20px;
 }
 
 .toolbar .logo {
@@ -32,18 +47,80 @@ body {
   letter-spacing: 0.03em;
   color: #fff;
   font-family: "Roboto", sans-serif;
+  padding-top: 30px;
+}
+
+.toolbar a {
+  color: #edecff;
+}
+
+.toolbar .nav-button {
+  padding-top: 20px;
+}
+
+.menu {
+  display: none;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+li {
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #f5f5ff;
+  margin-top: 12px;
+  padding: 0;
+}
+
+.mobile-menu {
+  max-width: 100%;
+  height: 100%;
+  background-image: url(icons&imgs/shapes-mobile-menu.png);
+  background-size: cover;
+  background-position: bottom;
+  background-color: #191765;
+  z-index: 8;
+  left: 0;
+  top: 0;
+  right: 0;
+  position: fixed;
+  padding: 24px;
+  display: none;
+}
+
+.menu-items {
+  list-style: none;
+}
+
+.frame38-container li {
+  padding: 10px 0 0 0;
+}
+
+.projects-seection li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  border-right: 1px solid #555;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 .toolbar .logo a {
   text-decoration: none;
-}
-
-.menu ul {
-  display: none;
-}
-
-i {
-  color: #edecff;
+  color: #fff;
 }
 
 .section-container {
@@ -63,6 +140,11 @@ i {
 .section-container .headline {
   text-align: center;
   color: #c8c8d4;
+}
+
+.intro-text {
+  padding: 8px;
+  line-height: 20px;
 }
 
 hr {
@@ -86,6 +168,7 @@ hr {
 .projects-seection .support-text {
   font-family: "Inter", sans-serif;
   font-size: 20px;
+  line-height: 20px;
 }
 
 .section-container .headline .support-text {
@@ -95,6 +178,7 @@ hr {
   font-weight: 500;
   margin-left: 24px;
   line-height: 37px;
+  padding: 10px;
 }
 
 .left {
@@ -131,8 +215,39 @@ hr {
   list-style: none;
 }
 
-.frame38-container li {
-  padding: 10px 0 0 0;
+.menu-items > li {
+  align-self: flex-start;
+  min-width: var(--mobile-medCont-width);
+  height: auto;
+}
+
+a#close {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  align-self: flex-end;
+}
+
+a.menu-item {
+  width: 100%;
+  text-align: center;
+  height: min-content;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #edecff;
+  text-decoration: none;
+}
+
+.menu-item::after {
+  content: url("images/biggerUnion.png");
+  position: relative;
+  float: right;
+  margin-right: 12px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 12px;
+  min-width: 12px;
 }
 
 .support-item {
@@ -159,6 +274,10 @@ hr {
 
 .workArrow {
   display: none;
+}
+
+.text-danger {
+  color: red !important;
 }
 
 .work-container {
@@ -217,20 +336,6 @@ hr {
   list-style: none;
 }
 
-.projects-seection li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 12px;
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  border-right: 1px solid #555;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
 .bttn {
   background: #7d73fc;
   color: #fff;
@@ -282,6 +387,12 @@ hr {
   width: 327px;
   left: 24px;
   top: 324px;
+}
+
+input,
+textarea {
+  color: #000;
+  text-align: left;
 }
 
 .contact-container .frame42 {
@@ -347,15 +458,156 @@ label {
   margin-left: 32px;
 }
 
+/*** Modal Popup ***/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background: #a2a3ae;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.modal-text {
+  color: #f5f5ff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 24px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.modal-header h2 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.modal-link ul {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  list-style: none;
+  gap: 14px;
+  font-size: 15px;
+}
+
+.modal-link li {
+  padding: 10px 4px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  border-right: 1px solid #555;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  color: #000;
+}
+
+.modal-body {
+  padding: 10px 16px;
+}
+
+#error-msg {
+  color: red;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
 /* Desktop version */
 
 @media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .headline {
+    max-width: 500px;
+  }
+
+  .menu {
+    display: block;
+  }
+
   .menu ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     gap: 32px;
     color: #ebebff;
+  }
+
+  .menu-arrow {
+    display: none;
   }
 
   .logo {
@@ -365,6 +617,7 @@ label {
   .menu a {
     font-size: 15px;
     color: #ebebff;
+    text-decoration: none;
   }
 
   .nav-button {
@@ -563,5 +816,45 @@ label {
   .footer-text {
     margin: 0;
     padding: 0;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .modal-content {
+    padding: 0 180px;
+  }
+
+  .modal-header {
+    padding: 16px 0 6px 15px;
+  }
+
+  .modal .snap {
+    height: 505px;
+    padding: 10px 0;
+  }
+
+  .modal-text {
+    color: #f5f5ff;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+  }
+
+  .modal-link ul {
+    display: flex;
+    list-style: none;
+    gap: 23px;
+    font-size: 20px;
+    justify-content: center;
+  }
+
+  .modal-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 73px;
   }
 }
