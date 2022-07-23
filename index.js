@@ -106,3 +106,19 @@ const span = document.getElementsByClassName('close')[0];
 span.onclick = function () {
   modal.style.display = 'none';
 };
+
+const myform = document.getElementById('myform');
+const email = document.getElementById('email');
+const error = document.getElementById('ErrorMessage');
+const submitbtn = document.getElementById('submitButton');
+// the function below check if the email address is all lowercase or not //
+function emailCheckLowerCase(emailtxt) {
+  let result = false;
+  if (emailtxt !== emailtxt.toLowerCase()) {
+    error.innerHTML = 'Email must be in lowercase';
+  } else {
+    error.innerHTML = '';
+    result = true;
+  }
+  return result;
+}
