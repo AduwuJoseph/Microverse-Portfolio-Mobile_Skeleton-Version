@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
 :root {
   --maxCont-width: 100%;
   --mobile-medCont-width: calc((327 / 375) * 100vw);
@@ -94,14 +95,10 @@ li {
   list-style: none;
 }
 
-.menu-items > li {
+.menu-items>li {
   align-self: flex-start;
   min-width: var(--mobile-medCont-width);
   height: auto;
-}
-
-.close {
-  text-align: right;
 }
 
 a#close {
@@ -291,7 +288,7 @@ hr {
   padding-top: 18px;
 }
 
-.projects-seection > a > img {
+.projects-seection>a>img {
   width: 85vw;
 }
 
@@ -548,6 +545,7 @@ label {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  text-align: right;
 }
 
 .close:hover,
@@ -690,7 +688,7 @@ label {
     gap: 20px;
   }
 
-  .projects-seection > a > img {
+  .projects-seection>a>img {
     width: auto;
     margin-bottom: 24px;
   }
@@ -807,7 +805,7 @@ label {
     margin: 0;
     padding: 0;
   }
-  
+
   .menu-list {
     display: none;
   }
