@@ -115,6 +115,7 @@ const submitbtn = document.getElementById('submitButton');
 function emailCheckLowerCase(emailtxt) {
   let result = false;
   if (emailtxt !== emailtxt.toLowerCase()) {
+    error.style.color = 'red';
     error.innerHTML = 'Email must be in lowercase';
   } else {
     error.innerHTML = '';
