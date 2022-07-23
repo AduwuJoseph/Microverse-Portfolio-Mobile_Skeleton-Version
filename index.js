@@ -52,7 +52,7 @@ const projects = [
     image: 'images/Snapshoot-Portfolio.png',
     technologies: ['HTML', 'JavaScript', 'CSS', 'Ruby'],
     link: 'link_to_live_version.com',
-  }
+  },
 ];
 
 const fillModal = (e) => {
@@ -66,7 +66,7 @@ const fillModal = (e) => {
   for (let i = 0; i < items.length; i += 1) {
     items[i].textContent = e.technologies[i];
   }
-}
+};
 
 const getModalData = (key, obj) => {
   for (let i = 0; i < obj.length; i += 1) {
@@ -75,7 +75,7 @@ const getModalData = (key, obj) => {
     }
   }
   return null;
-}
+};
 
 const modal = document.getElementById('myModal');
 const raiseModal = document.querySelectorAll('.raise-modal');

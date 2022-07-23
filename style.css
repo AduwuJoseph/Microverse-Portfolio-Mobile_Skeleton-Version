@@ -95,7 +95,7 @@ li {
   list-style: none;
 }
 
-.menu-items>li {
+.menu-items ul li {
   align-self: flex-start;
   min-width: var(--mobile-medCont-width);
   height: auto;
@@ -288,7 +288,7 @@ hr {
   padding-top: 18px;
 }
 
-.projects-seection>a>img {
+.projects-seection a img {
   width: 85vw;
 }
 
@@ -688,7 +688,7 @@ label {
     gap: 20px;
   }
 
-  .projects-seection>a>img {
+  .projects-seectio a img {
     width: auto;
     margin-bottom: 24px;
   }
