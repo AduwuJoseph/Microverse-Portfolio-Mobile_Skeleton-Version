@@ -78,6 +78,7 @@ const getModalData = (key, obj) => {
 };
 
 const modal = document.getElementById('myModal');
+const closeModal = document.getElementById('closeModal');
 const raiseModal = document.querySelectorAll('.raise-modal');
 raiseModal.forEach((trigger) => {
   trigger.addEventListener('click', () => {
@@ -85,6 +86,10 @@ raiseModal.forEach((trigger) => {
     fillModal(data);
     modal.style.display = 'block';
   });
+});
+
+closeModal.addEventListener('click', () => {
+  modal.style.display = 'none';
 });
 
 // When the user clicks anywhere outside of the modal, close it
