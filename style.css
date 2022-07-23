@@ -249,7 +249,6 @@ a.menu-item {
   min-height: 12px;
   min-width: 12px;
 }
-
 .support-item {
   display: flex;
   flex-direction: column;
@@ -308,7 +307,7 @@ a.menu-item {
   padding-top: 18px;
 }
 
-.projects-seection > a > img {
+.projects-seection>a>img {
   width: 85vw;
 }
 
@@ -387,6 +386,12 @@ a.menu-item {
   width: 327px;
   left: 24px;
   top: 324px;
+}
+
+input,
+textarea {
+  color: #000;
+  text-align: left;
 }
 
 .contact-container .frame42 {
