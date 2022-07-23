@@ -122,3 +122,9 @@ function emailCheckLowerCase(emailtxt) {
   }
   return result;
 }
+
+submitbtn.onclick = function () {
+  if (emailCheckLowerCase(email.value) === true) {
+    myform.submit();
+  }
+};

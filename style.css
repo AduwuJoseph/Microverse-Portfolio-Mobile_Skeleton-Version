@@ -31,6 +31,10 @@ body {
   padding-top: 10px;
 }
 
+p {
+  line-height: 20px;
+}
+
 .frame38-container p {
   margin: 0 0 20px 0;
   line-height: 20px;
@@ -164,10 +168,6 @@ hr {
 .projects-seection .support-text {
   font-family: "Inter", sans-serif;
   font-size: 20px;
-  line-height: 20px;
-}
-
-p {
   line-height: 20px;
 }
 
