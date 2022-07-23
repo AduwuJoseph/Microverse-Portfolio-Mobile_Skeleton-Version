@@ -176,9 +176,9 @@ const getLocalStorageData = () => {
   email.value = data.email;
   txtname.value = data.name;
   comment.value = data.comment;
-}
-// to refill the the text areas
+};
 
+// to refill the the text areas
 if (localStorage.getItem('formdata') != null) {
   getLocalStorageData();
 }
