@@ -31,8 +31,13 @@ body {
   padding-top: 10px;
 }
 
+p {
+  line-height: 20px;
+}
+
 .frame38-container p {
   margin: 0 0 20px 0;
+  line-height: 20px;
 }
 
 .toolbar .logo {
@@ -163,6 +168,7 @@ hr {
 .projects-seection .support-text {
   font-family: "Inter", sans-serif;
   font-size: 20px;
+  line-height: 20px;
 }
 
 .section-container .headline .support-text {
@@ -381,6 +387,12 @@ a.menu-item {
   width: 327px;
   left: 24px;
   top: 324px;
+}
+
+input,
+textarea {
+  color: #000;
+  text-align: left;
 }
 
 .contact-container .frame42 {
