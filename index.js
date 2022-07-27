@@ -100,12 +100,13 @@ window.onclick = function (event) {
 };
 
 // Get the <span> element that closes the modal
-const span = document.querySelectorAll('close');
+const span = document.querySelectorAll('.close');
 
 // When the user clicks on (x), it close the modal
 span.forEach((trigger) => {
-  trigger.addEventListener('click', () => {
+  trigger.addEventListener('click', (e) => {
     modal.style.display = 'none';
+    window.location.reload(false);
   });
 });
 
@@ -126,8 +127,8 @@ function emailCheckLowerCase(emailtxt) {
   return result;
 }
 
-submitbtn.onclick = function () {
-  if (emailCheckLowerCase(email.value) === true) {
-    myform.submit();
-  }
-};
+// submitbtn.onclick = function () {
+//   if (emailCheckLowerCase(email.value) === true) {
+//     myform.submit();
+//   }
+// };
