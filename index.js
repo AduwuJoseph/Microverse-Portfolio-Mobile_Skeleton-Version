@@ -100,12 +100,14 @@ window.onclick = function (event) {
 };
 
 // Get the <span> element that closes the modal
-const span = document.getElementsByClassName('close')[0];
+const span = document.querySelectorAll('close');
 
 // When the user clicks on (x), it close the modal
-span.onclick = function () {
-  modal.style.display = 'none';
-};
+span.forEach((trigger) => {
+  trigger.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+});
 
 const myform = document.getElementById('myform');
 const email = document.getElementById('email');
