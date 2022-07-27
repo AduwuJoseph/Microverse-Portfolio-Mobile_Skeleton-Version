@@ -104,7 +104,7 @@ const span = document.querySelectorAll('.close');
 
 // When the user clicks on (x), it close the modal
 span.forEach((trigger) => {
-  trigger.addEventListener('click', (e) => {
+  trigger.addEventListener('click', () => {
     modal.style.display = 'none';
     window.location.reload(false);
   });
