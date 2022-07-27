@@ -100,32 +100,12 @@ window.onclick = function (event) {
 };
 
 // Get the <span> element that closes the modal
-const span = document.getElementsByClassName('close')[0];
+const span = document.querySelectorAll('.close');
 
 // When the user clicks on (x), it close the modal
-span.onclick = function () {
-  modal.style.display = 'none';
-};
-
-const myform = document.getElementById('myform');
-const email = document.getElementById('email');
-const error = document.getElementById('ErrorMessage');
-const submitbtn = document.getElementById('submitButton');
-// the function below check if the email address is all lowercase or not //
-function emailCheckLowerCase(emailtxt) {
-  let result = false;
-  if (emailtxt !== emailtxt.toLowerCase()) {
-    error.style.color = 'red';
-    error.innerHTML = 'Email must be in lowercase';
-  } else {
-    error.innerHTML = '';
-    result = true;
-  }
-  return result;
-}
-
-submitbtn.onclick = function () {
-  if (emailCheckLowerCase(email.value) === true) {
-    myform.submit();
-  }
-};
+span.forEach((trigger) => {
+  trigger.addEventListener('click', () => {
+    modal.style.display = 'none';
+    window.location.reload(false);
+  });
+});

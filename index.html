@@ -38,17 +38,17 @@
     </header>
     <div id="mobileMenu" class="mobile-menu flex-column">
       <ul class="menu-items">
-        <li class="close">
+        <li>
           <a href="javascript:void(0);"><img src="images/Icon.png"  id="close" alt="close icon" /></a>
         </li>
         <li>
-          <a id="linkPortfolio" class="menu-item" href="#portfolio">Portfolio</a>
+          <a id="linkPortfolio" class="menu-item close" href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a id="linkAbout" class="menu-item" href="#about">About</a>
+          <a id="linkAbout" class="menu-item close" href="#about">About</a>
         </li>
         <li>
-          <a id="linkContact" class="menu-item" href="#contact">Contact</a>
+          <a id="linkContact" class="menu-item close" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -319,10 +319,9 @@
         />
         <label>Message</label>
         <textarea name="text" required maxlength="500" id="text">
-Enter text here</textarea
-        >
-        <label id="ErrorMessage"></label>
-        <button class="bttn" id="submitButton" type="button">See Project</button>
+          Enter text here
+        </textarea>
+        <button class="bttn" type="button">See Project</button>
       </form>
     </section>
 
