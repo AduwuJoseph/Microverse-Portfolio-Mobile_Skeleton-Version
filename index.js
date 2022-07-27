@@ -109,26 +109,3 @@ span.forEach((trigger) => {
     window.location.reload(false);
   });
 });
-
-const myform = document.getElementById('myform');
-const email = document.getElementById('email');
-const error = document.getElementById('ErrorMessage');
-const submitbtn = document.getElementById('submitButton');
-// the function below check if the email address is all lowercase or not //
-function emailCheckLowerCase(emailtxt) {
-  let result = false;
-  if (emailtxt !== emailtxt.toLowerCase()) {
-    error.style.color = 'red';
-    error.innerHTML = 'Email must be in lowercase';
-  } else {
-    error.innerHTML = '';
-    result = true;
-  }
-  return result;
-}
-
-// submitbtn.onclick = function () {
-//   if (emailCheckLowerCase(email.value) === true) {
-//     myform.submit();
-//   }
-// };
