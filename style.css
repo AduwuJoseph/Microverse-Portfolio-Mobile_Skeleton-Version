@@ -308,10 +308,6 @@ a.menu-item {
   padding-top: 18px;
 }
 
-.projects-seection > a > img {
-  width: 85vw;
-}
-
 .work-tittle h2 {
   color: #9490ff;
   font-family: "Roboto", sans-serif;
@@ -577,7 +573,11 @@ label {
 }
 
 .modal-body img {
-   width: 100%;
+  width: 100%;
+}
+
+.projects-seection > a > img {
+  width: 85vw;
 }
 
 #error-msg {
