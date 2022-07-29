@@ -90,7 +90,6 @@ raiseModal.forEach((trigger) => {
 
 closeModal.addEventListener('click', () => {
   modal.style.display = 'none';
-  window.location.reload(false);
 });
 
 // When the user clicks anywhere outside of the modal, close it

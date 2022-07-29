@@ -577,7 +577,7 @@ label {
 }
 
 .modal-body img {
-   width: auto;
+   width: 100%;
 }
 
 #error-msg {
@@ -828,6 +828,7 @@ label {
 
   .modal-content {
     padding: 0 180px;
+    width: 50%;
   }
 
   .modal-header {
