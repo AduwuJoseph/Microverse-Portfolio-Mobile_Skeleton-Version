@@ -576,6 +576,10 @@ label {
   padding: 10px 16px;
 }
 
+.modal-body img {
+   width: auto;
+}
+
 #error-msg {
   color: red;
   padding: 5px;
