@@ -100,10 +100,10 @@ window.onclick = function (event) {
 };
 
 // Get the <span> element that closes the modal
-const span = document.querySelectorAll('.close');
+const closeM = document.querySelectorAll('.close');
 
 // When the user clicks on (x), it close the modal
-span.forEach((trigger) => {
+closeM.forEach((trigger) => {
   trigger.addEventListener('click', () => {
     modal.style.display = 'none';
     window.location.reload(false);

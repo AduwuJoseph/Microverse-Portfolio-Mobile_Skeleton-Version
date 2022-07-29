@@ -308,10 +308,6 @@ a.menu-item {
   padding-top: 18px;
 }
 
-.projects-seection > a > img {
-  width: 85vw;
-}
-
 .work-tittle h2 {
   color: #9490ff;
   font-family: "Roboto", sans-serif;
@@ -477,10 +473,10 @@ label {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background: #a2a3ae;
+  background: #36347a;
   margin: auto;
   padding: 0;
-  border: 1px solid #888;
+  border: 1px solid #36347a;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
@@ -574,6 +570,14 @@ label {
 
 .modal-body {
   padding: 10px 16px;
+}
+
+.modal-body img {
+  width: 100%;
+}
+
+.projects-seection > a > img {
+  width: 85vw;
 }
 
 #error-msg {
@@ -824,6 +828,7 @@ label {
 
   .modal-content {
     padding: 0 180px;
+    width: 50%;
   }
 
   .modal-header {
