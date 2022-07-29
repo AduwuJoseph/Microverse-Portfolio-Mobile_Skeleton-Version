@@ -115,7 +115,7 @@ const email = document.getElementById('email');
 const error = document.getElementById('error-msg');
 const submitbtn = document.getElementById('submitButton');
 // the function below check if the email address is all lowercase or not //
-function emailCheckLowerCase(emailtxt) {
+const emailCheckLowerCase = (emailtxt) => {
   let result = false;
   if (emailtxt !== emailtxt.toLowerCase()) {
     error.style.color = 'red';
@@ -127,7 +127,7 @@ function emailCheckLowerCase(emailtxt) {
   return result;
 }
 
-submitbtn.onclick = function () {
+submitbtn.onclick = () => {
   if (emailCheckLowerCase(email.value) === true) {
     myform.submit();
   }
