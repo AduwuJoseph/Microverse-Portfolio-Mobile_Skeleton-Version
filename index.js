@@ -126,9 +126,3 @@ const emailCheckLowerCase = (emailtxt) => {
   }
   return result;
 };
-
-submitbtn.onclick = () => {
-  if (emailCheckLowerCase(email.value) === true) {
-    myform.submit();
-  }
-};
