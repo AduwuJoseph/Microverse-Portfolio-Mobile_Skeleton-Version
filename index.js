@@ -172,3 +172,11 @@ submitbtn.onclick = () => {
     storeToLocalStorage();
   }
 };
+
+const getLocalStorageData = () => {
+  const data = JSON.parse(localStorage.getItem('formdata'));
+  console.log(data);
+  email.value = data.email;
+  txtname.value = data.name;
+  comment.value = data.comment;
+};
