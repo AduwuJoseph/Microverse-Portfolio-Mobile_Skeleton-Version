@@ -185,4 +185,3 @@ const getLocalStorageData = () => {
 if (localStorage.getItem('formdata') != null) {
   getLocalStorageData();
 }
-
