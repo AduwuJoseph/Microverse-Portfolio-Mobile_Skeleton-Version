@@ -127,8 +127,61 @@ const emailCheckLowerCase = (emailtxt) => {
   return result;
 };
 
+// local storage
+const txtname = document.getElementById('name');
+const comment = document.getElementById('text');
+const inputFields = document.querySelectorAll('.input-fields');
+inputFields.forEach((trigger) => {
+  trigger.addEventListener('keyup', () => {
+    let nemail = email.value;
+    let nname = txtname.value;
+    let ncomment = comment.value;
+    if (trigger.attributes.id.value === 'email') {
+      nemail = trigger.value;
+    }
+
+    if (trigger.attributes.id.value === 'name') {
+      nname = trigger.value;
+    }
+
+    if (trigger.attributes.id.value === 'text') {
+      ncomment = trigger.value;
+    }
+
+    const data = {
+      email: nemail,
+      name: nname,
+      comment: ncomment,
+    };
+    localStorage.setItem('formdata', JSON.stringify(data));
+  });
+});
+
+const storeToLocalStorage = () => {
+  const data = {
+    email: email.value,
+    name: txtname.value,
+    comment: comment.value,
+  };
+  localStorage.setItem('formdata', JSON.stringify(data));
+};
+
 submitbtn.onclick = () => {
   if (emailCheckLowerCase(email.value) === true) {
     myform.submit();
+    storeToLocalStorage();
   }
 };
+
+const getLocalStorageData = () => {
+  const data = JSON.parse(localStorage.getItem('formdata'));
+  console.log(data);
+  email.value = data.email;
+  txtname.value = data.name;
+  comment.value = data.comment;
+};
+
+// to refill the the text areas
+if (localStorage.getItem('formdata') != null) {
+  getLocalStorageData();
+}

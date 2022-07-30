@@ -302,7 +302,7 @@
       <form method="post" action="https://formspree.io/f/mjvlplnjl" id="myform">
         <label>Name</label>
         <input
-          class="name"
+          class="name input-fields"
           type="text"
           name="text"
           required
@@ -311,6 +311,7 @@
         />
         <label>Email</label>
         <input
+          class="input-fields"
           type="email"
           name="email"
           required
@@ -318,7 +319,7 @@
           placeholder="test@gmail.com"
         />
         <label>Message</label>
-        <textarea name="text" required maxlength="500" placeholder="Enter text here" id="text"></textarea>
+        <textarea class="input-fields"  name="text" required maxlength="500" placeholder="Enter text here" id="text"></textarea>
         <label id="error-msg"></label>
         <button class="bttn" id="submitButton" type="button">See Project</button>
       </form>
