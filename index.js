@@ -180,3 +180,9 @@ const getLocalStorageData = () => {
   txtname.value = data.name;
   comment.value = data.comment;
 };
+
+// to refill the the text areas
+if (localStorage.getItem('formdata') != null) {
+  getLocalStorageData();
+}
+
