@@ -38,17 +38,17 @@
     </header>
     <div id="mobileMenu" class="mobile-menu flex-column">
       <ul class="menu-items">
-        <li class="close">
+        <li>
           <a href="javascript:void(0);"><img src="images/Icon.png"  id="close" alt="close icon" /></a>
         </li>
         <li>
-          <a id="linkPortfolio" class="menu-item" href="#portfolio">Portfolio</a>
+          <a id="linkPortfolio" class="menu-item close" href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a id="linkAbout" class="menu-item" href="#about">About</a>
+          <a id="linkAbout" class="menu-item close" href="#about">About</a>
         </li>
         <li>
-          <a id="linkContact" class="menu-item" href="#contact">Contact</a>
+          <a id="linkContact" class="menu-item close" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -282,7 +282,7 @@
                   <li>Ruby</li>
                 </ul>
               </div>
-              <button class="bttn raise-modal" type="button">See Project</button>
+              <button class="bttn raise-modal" id="004" type="button">See Project</button>
             </div>
           </div>
         </div>
@@ -319,9 +319,8 @@
           placeholder="test@gmail.com"
         />
         <label>Message</label>
-        <textarea class="input-fields" name="text" required maxlength="500" id="text">
-Enter text here</textarea>
-        <label id="ErrorMessage"></label>
+        <textarea class="input-fields"  name="text" required maxlength="500" placeholder="Enter text here" id="text"></textarea>
+        <label id="error-msg"></label>
         <button class="bttn" id="submitButton" type="button">See Project</button>
       </form>
     </section>
@@ -332,7 +331,7 @@ Enter text here</textarea>
         <div class="social-media-icon">
           <ul>
             <li>
-              <a href="#"
+              <a href="javascript:void(0);"
                 ><img class="git-icon" src="images/git-icon.png" alt="Github"
               /></a>
             </li>
@@ -345,7 +344,7 @@ Enter text here</textarea>
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="javascript:void(0);"
                 ><img
                   class="angelist-icon"
                   src="images/Icon-Angelist.png"
@@ -353,7 +352,7 @@ Enter text here</textarea>
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="#javascript:void(0);"
                 ><img
                   class="Twitter-icon"
                   src="images/Icon-Twitter.png"
@@ -379,13 +378,13 @@ Enter text here</textarea>
       <!-- Modal content -->
       <div class="modal-content">
         <div class="modal-header">
-          <span class="close"   id="closeModal">&times;</span>
+          <span class="close" id="closeModal">&times;</span>
           <h2></h2>
         </div>
         <div class="modal-body">
         <img class="snap modal-image" src="images/Snapshoot-Portfolio.png" alt="#img">
 
-          <div class="support-text ">
+          <div class="support-text">
             <div class="project-details modal-text">
               <p>
               </p>

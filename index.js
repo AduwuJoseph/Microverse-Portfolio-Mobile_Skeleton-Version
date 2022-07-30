@@ -100,16 +100,19 @@ window.onclick = function (event) {
 };
 
 // Get the <span> element that closes the modal
-const span = document.getElementsByClassName('close')[0];
+const closeM = document.querySelectorAll('.close');
 
 // When the user clicks on (x), it close the modal
-span.onclick = function () {
-  modal.style.display = 'none';
-};
+closeM.forEach((trigger) => {
+  trigger.addEventListener('click', () => {
+    modal.style.display = 'none';
+    window.location.reload(false);
+  });
+});
 
 const myform = document.getElementById('myform');
 const email = document.getElementById('email');
-const error = document.getElementById('ErrorMessage');
+const error = document.getElementById('error-msg');
 const submitbtn = document.getElementById('submitButton');
 // the function below check if the email address is all lowercase or not //
 const emailCheckLowerCase = (emailtxt) => {
@@ -163,7 +166,7 @@ const storeToLocalStorage = () => {
   localStorage.setItem('formdata', JSON.stringify(data));
 };
 
-submitbtn.onclick = function () {
+submitbtn.onclick = () => {
   if (emailCheckLowerCase(email.value) === true) {
     myform.submit();
     storeToLocalStorage();
