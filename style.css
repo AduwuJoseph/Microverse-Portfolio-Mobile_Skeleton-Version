@@ -342,12 +342,24 @@ a.menu-item {
   cursor: pointer;
 }
 
-.bttn:hover {
-  background: #7a71f7;
+h1:hover {
+  background-color: rgb(148, 75, 7);
+  color: #a39518;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+button.bttn:hover {
+  background-color: rgb(126, 30, 150);
+  color: #ebebff;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .bttn:focus {
-  background: #5e42d7;
+  background: #a739d3;
 }
 
 .bttn:active {
